@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  LQLDemo
+//
+//  Created by LQL on 2019/7/31.
+//  Copyright © 2019 com.lal. All rights reserved.
+//
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 导航栏高度
+#define NavigationBarHeight  ([[UIApplication sharedApplication] statusBarFrame].size.height + 44)
+#define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+
+#define kWidth [UIScreen mainScreen].bounds.size.width
+#define kHeight [UIScreen mainScreen].bounds.size.height
+#define RGBCOLOR(r,g,b,a)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+//uiimage
+#define GET_IMAGE(imageName)       [UIImage imageNamed:imageName]
+#define POSITION                    @"position"                             //位移
+#define OPACITY                     @"opacity"                              //透明度
+#define TRANSFORM_SCALE             @"transform.scale"                      //缩放
+#define TRANSFORM_ROTATION_Z        @"transform.rotation.z"                 //旋转
+#define BACKGROUNDCOLOR             @"backgroundColor"                      //背景色
+#define TRANSFORM_ROTATION          @"transform.rotation"                   //抖动
+//push 出控制器
+#define QLPUSH(vc) self.navigationController.push(vc)
+#endif /* PrefixHeader_pch */
+
+
+
+#ifdef __OBJC__
+#import "UINavigationController+LH.h"
+#import "UIColor+Hex.h"
+#import "UIView+QLCategory.h"
+#import "QLTools.h"
+#import "KViewController.h"
+#endif
